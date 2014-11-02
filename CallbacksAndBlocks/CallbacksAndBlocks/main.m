@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TargetActionLogger.h"
+#import "TargetLogger.h"
 #import "DelegateLogger.h"
 #import "NotificationLogger.h"
 void eventWithTargetAction()
 {
-    TargetActionLogger *logger = [[TargetActionLogger alloc] init];
+    TargetLogger *logger = [[TargetLogger alloc] init];
     
     __unused NSTimer *timer = [NSTimer
                                scheduledTimerWithTimeInterval:2.0
@@ -53,8 +53,8 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         eventWithTargetAction();
-        //eventWithDelegate();
-        //eventWithNotification();
+        eventWithDelegate();
+        eventWithNotification();
         
         [[NSRunLoop currentRunLoop] run];
         

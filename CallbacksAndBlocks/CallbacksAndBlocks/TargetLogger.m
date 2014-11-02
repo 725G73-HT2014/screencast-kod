@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Instutitionen för datavetenskap, Linköpings Universitet. All rights reserved.
 //
 
-#import "TargetActionLogger.h"
+#import "TargetLogger.h"
 
-@implementation TargetActionLogger
+@implementation TargetLogger
 
 - (NSString *) lastTimeString
 {

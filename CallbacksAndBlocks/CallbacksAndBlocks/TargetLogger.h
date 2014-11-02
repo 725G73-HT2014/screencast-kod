@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TargetActionLogger : NSObject
+@interface TargetLogger : NSObject
 
 @property (nonatomic) NSDate *lastTime;
 - (NSString *) lastTimeString;

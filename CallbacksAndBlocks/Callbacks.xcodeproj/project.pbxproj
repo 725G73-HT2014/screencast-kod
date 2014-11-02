@@ -12,7 +12,7 @@
 		70800F3D1A0696CC002C1751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70800F3C1A0696CC002C1751 /* Foundation.framework */; };
 		70800F401A0696CC002C1751 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70800F3F1A0696CC002C1751 /* main.m */; };
 		70800F441A0696CC002C1751 /* CallbacksAndBlocks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 70800F431A0696CC002C1751 /* CallbacksAndBlocks.1 */; };
-		70800F4C1A069855002C1751 /* TargetActionLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 70800F4B1A069855002C1751 /* TargetActionLogger.m */; };
+		70800F4C1A069855002C1751 /* TargetLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 70800F4B1A069855002C1751 /* TargetLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,8 +38,8 @@
 		70800F3F1A0696CC002C1751 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70800F421A0696CC002C1751 /* Callbacks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Callbacks-Prefix.pch"; sourceTree = "<group>"; };
 		70800F431A0696CC002C1751 /* CallbacksAndBlocks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CallbacksAndBlocks.1; sourceTree = "<group>"; };
-		70800F4A1A069855002C1751 /* TargetActionLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetActionLogger.h; sourceTree = "<group>"; };
-		70800F4B1A069855002C1751 /* TargetActionLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetActionLogger.m; sourceTree = "<group>"; };
+		70800F4A1A069855002C1751 /* TargetLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetLogger.h; sourceTree = "<group>"; };
+		70800F4B1A069855002C1751 /* TargetLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +87,8 @@
 				70800F3F1A0696CC002C1751 /* main.m */,
 				70800F431A0696CC002C1751 /* CallbacksAndBlocks.1 */,
 				70800F411A0696CC002C1751 /* Supporting Files */,
-				70800F4A1A069855002C1751 /* TargetActionLogger.h */,
-				70800F4B1A069855002C1751 /* TargetActionLogger.m */,
+				70800F4A1A069855002C1751 /* TargetLogger.h */,
+				70800F4B1A069855002C1751 /* TargetLogger.m */,
 				706AD2741A06E1A900BF36E9 /* NotificationLogger.h */,
 				706AD2751A06E1AA00BF36E9 /* NotificationLogger.m */,
 			);
@@ -155,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70800F4C1A069855002C1751 /* TargetActionLogger.m in Sources */,
+				70800F4C1A069855002C1751 /* TargetLogger.m in Sources */,
 				70800F401A0696CC002C1751 /* main.m in Sources */,
 				706AD2761A06E1AA00BF36E9 /* NotificationLogger.m in Sources */,
 				706AD2731A06E05400BF36E9 /* DelegateLogger.m in Sources */,
