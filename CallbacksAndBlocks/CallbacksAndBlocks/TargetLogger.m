@@ -16,7 +16,7 @@
     
     //Initialize the date formatter if it isn't already initialized
     if (!dateFormatter) {
-
+        dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
         [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
         NSLog(@"Created dateFormatter");

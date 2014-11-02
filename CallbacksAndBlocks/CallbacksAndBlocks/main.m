@@ -10,6 +10,7 @@
 #import "TargetLogger.h"
 #import "DelegateLogger.h"
 #import "NotificationLogger.h"
+
 void eventWithTargetAction()
 {
     TargetLogger *logger = [[TargetLogger alloc] init];
@@ -53,8 +54,8 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         eventWithTargetAction();
-        eventWithDelegate();
-        eventWithNotification();
+        //eventWithDelegate();
+        //eventWithNotification();
         
         [[NSRunLoop currentRunLoop] run];
         
