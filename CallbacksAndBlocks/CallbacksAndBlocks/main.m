@@ -21,6 +21,8 @@ void eventWithTargetAction()
                                selector:@selector(updateLastTime:)
                                userInfo:nil
                                repeats:YES];
+    
+    [[NSRunLoop currentRunLoop] run];
 }
 
 void eventWithDelegate()
@@ -35,6 +37,8 @@ void eventWithDelegate()
                                            initWithRequest:request
                                            delegate:logger
                                            startImmediately:YES];
+    
+    [[NSRunLoop currentRunLoop] run];
 }
 
 void eventWithNotification()
@@ -44,20 +48,21 @@ void eventWithNotification()
     [[NSNotificationCenter defaultCenter]
      addObserver:logger
      selector:@selector(zoneChange:)
-     name:NSSystemClockDidChangeNotification
+     name:NSSystemTimeZoneDidChangeNotification
      object:nil];
+    
+    [[NSRunLoop currentRunLoop] run];
 }
 
 int main(int argc, const char * argv[])
 {
     
     @autoreleasepool {
-        
-        eventWithTargetAction();
+
+        //eventWithTargetAction();
         //eventWithDelegate();
-        //eventWithNotification();
+        eventWithNotification();
         
-        [[NSRunLoop currentRunLoop] run];
         
     }
     return 0;
