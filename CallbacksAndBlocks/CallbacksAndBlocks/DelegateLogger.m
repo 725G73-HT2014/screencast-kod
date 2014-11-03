@@ -10,7 +10,8 @@
 
 @implementation DelegateLogger
 
-- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+- (void) connection:(NSURLConnection *)connection
+     didReceiveData:(NSData *)data
 {
     NSLog(@"recieved %lu bytes", [data length]);
     
@@ -33,7 +34,8 @@
     //NSLog(@"The whole string is %@", string);
 }
 
-- (void) connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+- (void) connection:(NSURLConnection *)connection
+   didFailWithError:(NSError *)error
 {
     NSLog(@"Connection failed: %@", [error localizedDescription]);
     _incomingData = nil;
